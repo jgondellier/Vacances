@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/global.css') }}" type="text/css" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmfQpdHM4EisYiImqfBsvYVxnUxY258LI&callback=initMap">
+    </script>
+    </body>
+</html>
