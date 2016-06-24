@@ -11,6 +11,9 @@
                 zoom: 6
             });
 
+            var imgHotel ='http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|FE6256|000000';
+            var imgDesti ='http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|FE6256|000000';
+
             var bangkok = new google.maps.Marker({
                 position: {lat: 13.7563309, lng: 100.50176510000006},
                 map: map,
@@ -36,6 +39,21 @@
                 map: map,
                 title: 'Phuket'
             });
+            var RambuttriVillagePlaza = new google.maps.Marker({
+                position: {lat: 13.761824, lng: 100.496243},
+                map: map,
+                icon:imgHotel,
+                title: 'Rambuttri village Plaza'
+            });
+
+            var BaanAreGongRiverside = new google.maps.Marker({
+                position: {lat: 14.356415, lng: 100.581838},
+                map: map,
+                icon:imgHotel,
+                title: 'Baan Are Gong Riverside Homestay'
+            });
+
+
 
         }
 
