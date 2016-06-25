@@ -11,10 +11,10 @@
                 zoom: 6
             });
 
-            var imgHotel ='http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|FE6256|000000';
+            var imgHotel ='img/map/bed-map-icon-1.png';
             var imgDesti ='http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|FE6256|000000';
 
-            var bangkok = new google.maps.Marker({
+           /* var bangkok = new google.maps.Marker({
                 position: {lat: 13.7563309, lng: 100.50176510000006},
                 map: map,
                 title: 'Bangkok'
@@ -38,22 +38,117 @@
                 position: {lat: 7.9519331, lng: 98.33808840000006},
                 map: map,
                 title: 'Phuket'
-            });
+            });*/
             var RambuttriVillagePlaza = new google.maps.Marker({
                 position: {lat: 13.761824, lng: 100.496243},
                 map: map,
-                icon:imgHotel,
+                label:'1',
                 title: 'Rambuttri village Plaza'
+            });
+            var RambuttriVillagePlazaDetail = '<div id="content"><h1 id="firstHeading" class="firstHeading">Rambuttri village Plaza</h1>'+
+                    '<div id="bodyContent">'+
+                    '<IMG style="padding-right:5px;" BORDER="0" ALIGN="Left" WIDTH=50% SRC="img/thailande/detail/RambuttriVillagePlazaDetail.jpg">'+
+                    '<p>Entouré de lieux culturels et de loisirs, le Rambuttri Village Plaza est situé dans le quartier historique de Rattanakosin</p>'+
+                    '<p>Séjour du 30 juin au 1er juillet 2016</p>'+
+                    '<p><a href="https://www.booking.com/hotel/th/rambuttri-village-plaza.fr.html">plus de détail...</a></p>'+
+                    '<div>'+
+                    '</div>';
+            var RambuttriVillagePlazaInfo = new google.maps.InfoWindow({
+                content: RambuttriVillagePlazaDetail,
+                maxWidth: 400
+            });
+            RambuttriVillagePlaza.addListener('click', function() {
+                RambuttriVillagePlazaInfo.open(map, RambuttriVillagePlaza);
             });
 
             var BaanAreGongRiverside = new google.maps.Marker({
                 position: {lat: 14.356415, lng: 100.581838},
                 map: map,
-                icon:imgHotel,
+                label:'2',
                 title: 'Baan Are Gong Riverside Homestay'
+            });
+            var BaanAreGongRiversideDetail = '<div id="content"><h1 id="firstHeading" class="firstHeading">Baan Are Gong Riverside Homestay</h1>'+
+                    '<div id="bodyContent">'+
+                    '<IMG style="padding-right:5px;" BORDER="0" ALIGN="Left" WIDTH=50% SRC="img/thailande/detail/BaanAreGongRiversideDetail.jpg">'+
+                    '<p>Guesthouse typique de thailande à 5mn de la gare d\'Ayutthaya</p>'+
+                    '<p>Dans la nuit du 02 juillet 2016</p>'+
+                    '<p><a href="https://www.booking.com/hotel/th/baan-are-gong-riverside-homestay.fr.html">plus de détail...</a></p>'+
+                    '<div>'+
+                    '</div>';
+            var BaanAreGongRiversideInfo = new google.maps.InfoWindow({
+                content: BaanAreGongRiversideDetail,
+                maxWidth: 400
+            });
+            BaanAreGongRiverside.addListener('click', function() {
+                BaanAreGongRiversideInfo.open(map, BaanAreGongRiverside);
+            });
+
+            var OldtownBoutiqueHotel = new google.maps.Marker({
+                position: {lat: 17.0166111, lng: 99.7057103},
+                map: map,
+                label:'3',
+                title: 'Oldtown Boutique Hotel'
+            });
+            var OldtownBoutiqueHotelDetail = '<div id="content"><h1 id="firstHeading" class="firstHeading">Oldtown Boutique House</h1>'+
+                    '<div id="bodyContent">'+
+                    '<IMG style="padding-right:5px;" BORDER="0" ALIGN="Left" WIDTH=50% SRC="img/thailande/detail/OldtownBoutiqueHotelDetail.jpg">'+
+                    '<p>Magnifique hotel dans le centre de  Sukhothai</p>'+
+                    '<p>Séjour du 03 juillet au 04 juillet 2016</p>'+
+                    '<p><a href="http://www.agoda.com/oldtown-boutique-house/hotel/sukhothai-th.html">plus de détail...</a></p>'+
+                    '<div>'+
+                    '</div>';
+            var OldtownBoutiqueHotelInfo = new google.maps.InfoWindow({
+                content: OldtownBoutiqueHotelDetail,
+                maxWidth: 400
+            });
+            OldtownBoutiqueHotel.addListener('click', function() {
+                OldtownBoutiqueHotelInfo.open(map, OldtownBoutiqueHotel);
             });
 
 
+            var MonaBoutiqueHotel = new google.maps.Marker({
+                position: {lat: 18.7637891, lng: 98.9975483},
+                map: map,
+                label:'4',
+                title: 'Mona Boutique Hotel'
+            });
+            var MonaBoutiqueHotelDetail = '<div id="content"><h1 id="firstHeading" class="firstHeading">Mona Chiangmai Boutique</h1>'+
+                    '<div id="bodyContent">'+
+                    '<IMG style="padding-right:5px;" BORDER="0" ALIGN="Left" WIDTH=50% SRC="img/thailande/detail/MonaBoutiqueHotelDetail.jpg">'+
+                    '<p>Hotel typique qui propose des chambres confortables dans Chiang Mai.</p>'+
+                    '<p>Séjour du 05 juillet au 11 juillet 2016</p>'+
+                    '<p><a href="https://www.booking.com/hotel/th/mona-chiang-mai.fr.html">plus de détail...</a></p>'+
+                    '<div>'+
+                    '</div>';
+            var MonaBoutiqueHotelInfo = new google.maps.InfoWindow({
+                content: MonaBoutiqueHotelDetail,
+                maxWidth: 400
+            });
+            MonaBoutiqueHotel.addListener('click', function() {
+                MonaBoutiqueHotelInfo.open(map, MonaBoutiqueHotel);
+            });
+
+            var CasuarinaShores = new google.maps.Marker({
+                position: {lat: 7.9944833, lng: 98.2925532},
+                map: map,
+                label:'5',
+                title: 'Casuarina Shores'
+            });
+            var CasuarinaShoresDetail = '<div id="content"><h1 id="firstHeading" class="firstHeading">Appartement 5* près de la plage</h1>'+
+                    '<div id="bodyContent">'+
+                    '<IMG style="padding-right:5px;" BORDER="0" ALIGN="Left" WIDTH=50% SRC="img/thailande/detail/CasuarinaShoresDetail.jpg">'+
+                    '<p>Magnifique appartement situé à Bang Tao Beach, Phuket, Thaïlande près de la plage.</p>'+
+                    '<p>Séjour du 12 juillet au 21 juillet 2016</p>'+
+                    '<p><a href="https://www.airbnb.fr/rooms/8228264">plus de détail...</a></p>'+
+                    '<div>'+
+                    '</div>';
+            var CasuarinaInfo = new google.maps.InfoWindow({
+                content: CasuarinaShoresDetail,
+                maxWidth: 400
+            });
+            CasuarinaShores.addListener('click', function() {
+                CasuarinaInfo.open(map, CasuarinaShores);
+            });
 
         }
 
