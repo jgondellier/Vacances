@@ -16,15 +16,16 @@
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
-        <field name="GPSLatitudeRef" length="1" />
-        <field name="GPSLatitude" length="100" type="string" />
-        <field name="GPSLongitudeRef" length="1" />
-        <field name="GPSLongitude" length="100" type="string" />
-        <field name="GPSAltitudeRef" length="1" />
-        <field name="GPSAltitude" length="100" type="string" />
-        <field name="GPSTimeStamp" length="100" type="string" />
-        <field name="GPSImgDirectionRef" length="1" />
-        <field name="GPSImgDirection" length="100" type="string" />
-
+        <field name="GPSLatitudeRef" length="1" nullable="true"/>
+        <field name="GPSLatitude" length="100" type="string" nullable="true"/>
+        <field name="GPSLongitudeRef" length="1" nullable="true"/>
+        <field name="GPSLongitude" length="100" type="string" nullable="true"/>
+        <field name="GPSAltitudeRef" length="1" nullable="true"/>
+        <field name="GPSAltitude" length="100" type="string" nullable="true"/>
+        <field name="GPSTimeStamp" length="100" type="string" nullable="true"/>
+        <field name="GPSImgDirectionRef" length="1" nullable="true"/>
+        <field name="GPSImgDirection" length="100" type="string" nullable="true"/>
+        <field name="Longitude" type="float" nullable="true"/>
+        <field name="Latitude" type="float" nullable="true"/>
     </entity>
 </doctrine-mapping>

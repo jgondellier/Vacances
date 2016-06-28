@@ -76,6 +76,16 @@ class Media extends BaseMedia
     protected $GPSImgDirection;
 
     /**
+     * @var float
+     */
+    protected $Longitude;
+
+    /**
+     * @var float
+     */
+    protected $Latitude;
+
+    /**
      * Get id
      *
      * @return int $id
@@ -290,5 +300,51 @@ class Media extends BaseMedia
     public function getGPSImgDirection()
     {
         return $this->GPSImgDirection;
+    }
+
+    /**
+     * Set Longitude
+     *
+     * @param string $longitude
+     * @return Media
+     */
+    public function setLongitude($longitude)
+    {
+        $this->Longitude = $longitude;
+
+        return $this;
+    }
+
+    /**
+     * Get Longitude
+     *
+     * @return string
+     */
+    public function getLongitude()
+    {
+        return $this->Longitude;
+    }
+
+    /**
+     * Set Latitude
+     *
+     * @param string $latitude
+     * @return Media
+     */
+    public function setLatitude($latitude)
+    {
+        $this->Latitude = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Get Latitude
+     *
+     * @return string
+     */
+    public function getLatitude()
+    {
+        return $this->Latitude;
     }
 }
